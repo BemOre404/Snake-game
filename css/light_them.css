@@ -1,0 +1,238 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Inter', sans-serif;
+	user-select: none;
+    background-color: #E6B1BB;
+	transition: 0.3s;
+	transition-timing-function: ease;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.grid
+{
+	display: grid;
+	min-height: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"first main end_grid";
+}
+
+/* first grid*/
+
+.first_block
+{
+	grid-area: first;
+}
+.game_name
+{
+	padding: 38px 0px 0px 52px;
+	font-size: 120px;
+	color: white;
+}
+.score_block
+{
+	display: flex;
+	flex-direction: column;
+	padding: 52px 0px 0px 56px;
+	font-size: 50px;
+	color: white;
+	font-weight: medium;
+}
+.move
+{
+	padding: 20px 0px 10px 0px;
+	font-weight: light;
+	font-size: 35px;
+}
+.score
+{
+	padding-bottom: 40px;
+}
+
+/* main grid*/
+
+.main_grid
+{
+	align-self: center;
+	justify-self: center;
+	grid-area: main;
+	
+	
+}
+
+.canvas
+{	width: 800px;
+	height: 800px;
+	background-color: #84B09F;
+	border: 25px solid #6F889E;
+	border-radius: 30px;
+	box-shadow: -40px 40px #E79199;
+	margin-bottom: 30px;
+}
+
+
+/* end grid*/
+
+.end_grid
+{
+	grid-area: end_grid;
+	justify-self: end;
+	align-self: start;
+}
+.togle
+{
+	width: 77px; 
+	height: 77px; 
+	margin: -20px 0 20px 0;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 #fff;
+	margin: 39px 90px 0px 0px;
+}
+.togle:hover
+{
+	
+}
+.button
+{
+	width: 107px; 
+	height: 107px; 
+	opacity: 0;
+}
+.button:hover
+{
+	cursor: pointer;
+}
+/*
+Pong
+Breakout
+Tetris
+Bomberman
+Frogger
+Missile Command
+Sokoban
+Doodle Jump
+Puzzle Bobble
+Helicopter
+Block Dude*/
+
+
+
+
+
+
+
+
+
+.jsminutes
+{
+	padding: 0px 15px;
+}
+.interval_js_second
+{
+	padding: 0px 15px;
+}
+.interval_js_hundred_second
+{
+	width: 90px;
+	padding: 0px 15px;
+}
+.stopwatch
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom:20px ;
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	min-width: 500px;
+	
+}
+.container
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 400px
+}
+.time 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.interval
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.column
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 15px;
+}
+.change_color_button
+{
+	display: flex;
+	align-self: end;
+	justify-content: left;
+	
+}
+.color_btn
+{
+
+	color: #fff;
+	font-size: 30px;
+	margin: 0 ;
+	width: 250px;
+	height: 130px;
+	background-color: #84B09F;
+	border: 15px solid #6F889E;
+	border-radius: 25px;
+	margin-top: 150px;
+	box-shadow: -20px 20px #E79199;
+	padding: 5px;
+	transition: 0.3s;
+	transition-timing-function: ease;
+}
+.color_btn:hover
+{
+	transform: scale(1.1);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="theme-link" rel="stylesheet" href="css/light_them.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <div class="grid">
+        <div class="first_block">
+            <div class="game_name">
+                <p>Snake </p>
+            </div>
+            <div class="score_block">
+                <p class="score" id="score">Score:</p>
+                <p class="move"> Enter "Esc" to paus</p>
+                <p class="move"> move left <--</p>
+                <p class="move"> move right --></p>
+                <p class="move"> move up &uarr;</p>
+                <p class="move"> move bottom &darr;</p>
+                    <button class="color_btn" id="color_btn"> Push to change color</button>
+            </div>
+       </div>
+            <div class="main_grid">
+
+                <div class="stopwatch">
+                    <div class="container">
+                        <div class="time">
+                            <span class="jsminutes">00</span>
+                            <span class="column"> :</span>
+                            <span class="interval_js_second">00</span>
+                            <span class="column">:</span>
+                            <span class="interval_js_hundred_second">00</span>
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+                <canvas class="canvas"  width="800" height="800" id="game">
+                </canvas>
+            </div>
+           
+       <div class="end_grid">
+            <label for="">
+                <div class="togle">
+                    <input class="button" id="button" type="checkbox">
+                </div>
+            </label>
+       </div>
+       </div>
+        <script src="js/game.js"></script>
+    </body>
+</html>
